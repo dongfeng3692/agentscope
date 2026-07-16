@@ -27,7 +27,7 @@ dependencies = [
     "filetype",
     "json5",
     "json_repair",
-    "mcp",
+    "mcp<2.0.0",
     "httpx",
     "numpy",
     "openai",
@@ -73,6 +73,7 @@ workspace = [
     "aiodocker",
     "e2b",
     "agentscope[k8s]",
+    "daytona",
     "opensandbox",
 ]
 # ------------ Tools ------------
@@ -90,8 +91,8 @@ rag = [
     "pandas",
 ]
 milvuslite = [
-    "pymilvus[milvus-lite]>=2.4.0",
-    "milvus-lite>=3.0; sys_platform == 'win32'",
+    "pymilvus>=2.4.0",
+    "milvus-lite>=3.1.0",
 ]
 # ------------ MongoDB vector store ------------
 mongodb = [
